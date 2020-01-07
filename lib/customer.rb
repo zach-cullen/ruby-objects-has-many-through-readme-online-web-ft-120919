@@ -10,7 +10,7 @@ class Customer
   end
   
   def new_meal
-    order = Meal.new(waiter, self, total, tip)
+    order = Meal.new(waiter, total, tip)
   end
   
   def meals
