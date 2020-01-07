@@ -18,7 +18,7 @@ class Waiter
   end
   
   def best_tipper
-    self.meals.
+    self.meals.reduce {|0, meal| meal.}
   end
     
   def self.all
