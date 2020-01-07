@@ -18,7 +18,8 @@ class Waiter
   end
   
   def best_tipper
-    self.meals.reduce {|memo, meal| meal.tip > memo ? meal.customer : memo}
+    best_tip = self.meals.reduce {|memo, meal| meal.tip > memo ? meal : memo}
+    best_tipper = best_tip.customer
   end
     
   def self.all
